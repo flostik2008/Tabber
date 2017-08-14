@@ -38,11 +38,15 @@ As part of your pre-work submission, please reflect on the app and answer the fo
 
 **Question 1**: "What are your reactions to the iOS app development platform so far? How would you describe outlets and actions to another developer? Bonus: any idea how they are being implemented under the hood? (It might give you some ideas if you right-click on the Storyboard and click Open As->Source Code")
 
-**Answer:** [Enter your answer here in a paragraph or two].
+**Answer:** 
+Outlets - are UI elements (e.g. buttons, text fields, table views) and sometimes - constraints. Whenever we need to manipulate our UI elements, we use references to them within our view controller.  Declared as @IBOutlet. 
+Actions - are actions (eg “log in when button pressed” )that a given UI element will trigger, when user interacts with it. Declared as @IBAction. 
+Storyboard is nothing but a visual representation of a xml that consist of key values. Every view controller is a “scene” with its own ID. Contents of a scene are “objects”. 
 
 Question 2: "Swift uses [Automatic Reference Counting](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AutomaticReferenceCounting.html#//apple_ref/doc/uid/TP40014097-CH20-ID49) (ARC), which is not a garbage collector, to manage memory. Can you explain how you can get a strong reference cycle for closures? (There's a section explaining this concept in the link, how would you summarize as simply as possible?)"
 
-**Answer:** [Enter your answer here in a paragraph or two].
+**Answer:** 
+Strong reference cycles occurs when properties reference each other. Closures can be assigned as a property of a class. If that closure uses properties of that same class - it will appear in closure body as ’self.classProperty.doSmth’. At this point, a closure will have a reference to the object through that ’self’ - we will have a reference cycle, since closure itself is a reference. 
 
 
 ## License
