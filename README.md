@@ -2,7 +2,7 @@
 
 **Tabber** is a tip calculator application for iOS.
 
-Submitted by: **Evgeny**
+Submitted by: **Evgeny Vlasov**
 
 Time spent: **3** hours spent in total
 
