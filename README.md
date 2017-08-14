@@ -21,7 +21,7 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-- After updating default tip in SettingsVC and returning to the mainVC - SegmentedViewController automatically updated to selected tip.
+- After updating default tip in SettingsVC and returning to the mainVC - SegmentedViewController automatically updated to selected tip and total is recalculated.
 
 
 ## Video Walkthrough 
