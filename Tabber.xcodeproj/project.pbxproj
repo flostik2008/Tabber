@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8712D73F1F42869400A8030A /* HelveticaNeue.dfont in Resources */ = {isa = PBXBuildFile; fileRef = 8712D73E1F42869400A8030A /* HelveticaNeue.dfont */; };
 		871984971F3BDA99009D64EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871984961F3BDA99009D64EC /* AppDelegate.swift */; };
 		871984991F3BDA99009D64EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871984981F3BDA99009D64EC /* ViewController.swift */; };
 		8719849C1F3BDA99009D64EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8719849A1F3BDA99009D64EC /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8712D73E1F42869400A8030A /* HelveticaNeue.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue.dfont; sourceTree = "<group>"; };
 		871984931F3BDA99009D64EC /* Tabber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		871984961F3BDA99009D64EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		871984981F3BDA99009D64EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				87FF578B1F40E028005481EC /* Notes.rtf */,
+				8712D73E1F42869400A8030A /* HelveticaNeue.dfont */,
 				871984951F3BDA99009D64EC /* Tabber */,
 				871984AA1F3BDA99009D64EC /* TabberTests */,
 				871984B51F3BDA99009D64EC /* TabberUITests */,
@@ -239,6 +242,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8712D73F1F42869400A8030A /* HelveticaNeue.dfont in Resources */,
 				87FF578C1F40E028005481EC /* Notes.rtf in Resources */,
 				871984A11F3BDA99009D64EC /* LaunchScreen.storyboard in Resources */,
 				8719849E1F3BDA99009D64EC /* Assets.xcassets in Resources */,
@@ -423,6 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PC6ZE95SDH;
 				INFOPLIST_FILE = Tabber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evgeny.test.Tabber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -436,6 +441,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = PC6ZE95SDH;
 				INFOPLIST_FILE = Tabber/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.evgeny.test.Tabber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
