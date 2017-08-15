@@ -14,7 +14,7 @@ The following **required** functionality is complete:
 * [x] Settings page to change the default tip percentage.
 
 The following **optional** features are implemented:
-* [ ] UI animations
+* [x] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
 * [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
@@ -22,13 +22,15 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - After updating default tip in SettingsVC and returning to the mainVC - SegmentedViewController automatically updated to selected tip and total is recalculated.
+- SettingsVC implemented with PickerViewController
+- Split total bill value to 2, 3 and 4 guests (as in examples)
 
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://media.giphy.com/media/l41JRaxesiGB5V8mA/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media.giphy.com/media/l1J3PwuKJ9n1gXWbC/giphy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -53,7 +55,7 @@ Strong reference cycles occurs when properties reference each other. Closures ca
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2017 Evgeny Vlasov
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
