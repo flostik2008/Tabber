@@ -51,7 +51,7 @@ class SettingsVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource
         if row != 0 {
         var percentValue = pickerData[row]
         percentValue = percentValue.replacingOccurrences(of: "%", with: "0.")
-        var percentValueDouble = Double(percentValue)
+        let percentValueDouble = Double(percentValue)
         
         let defaults = UserDefaults.standard
         defaults.set(percentValueDouble, forKey: "default_tip")

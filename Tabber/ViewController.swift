@@ -30,7 +30,6 @@ class ViewController: UIViewController {
         updateValues()
         
         billField.becomeFirstResponder()
-        
         billField.attributedPlaceholder = NSAttributedString(string: "$", attributes: [NSForegroundColorAttributeName: UIColor(red:0.00, green:0.52, blue:1.00, alpha:1.0)])
         
         navigationController?.navigationBar.barTintColor = UIColor(red:0.00, green:0.52, blue:1.00, alpha:1.0)
@@ -39,8 +38,8 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "HelveticaNeue-ThinItalic", size:30)!]
         
-        
-        
+        NotificationCenter.default.addObserver(self, selector: #selector(closeApp), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(openApp), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -108,6 +107,31 @@ class ViewController: UIViewController {
         calcTip(self)
     }
     
+    func closeApp() {
+        print("Zhenya: closeApp() func was triggered")
+        let closingTime = Date()
+        let defaults = UserDefaults.standard
+        defaults.set(closingTime, forKey: "closing_time")
+    }
     
+    func openApp() {
+        let openingTime = Date()
+        let defaults = UserDefaults.standard
+        let closingTime = defaults.object(forKey: "closing_time") as? Date
+        if closingTime != nil {
+            compareTimes(openingTime, closingTime!)
+        }
+    }
+    
+    func compareTimes(_ opening: Date?, _ closing: Date?) {
+  
+        if (opening!.timeIntervalSinceReferenceDate - closing!.timeIntervalSinceReferenceDate) > 600 {
+            resetUI()
+        }
+    }
+    
+    func resetUI() {
+        billField.text = ""
+    }
 }
 

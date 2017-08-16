@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8712D73F1F42869400A8030A /* HelveticaNeue.dfont in Resources */ = {isa = PBXBuildFile; fileRef = 8712D73E1F42869400A8030A /* HelveticaNeue.dfont */; };
 		871984971F3BDA99009D64EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871984961F3BDA99009D64EC /* AppDelegate.swift */; };
 		871984991F3BDA99009D64EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871984981F3BDA99009D64EC /* ViewController.swift */; };
 		8719849C1F3BDA99009D64EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8719849A1F3BDA99009D64EC /* Main.storyboard */; };
@@ -15,7 +14,6 @@
 		871984A11F3BDA99009D64EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8719849F1F3BDA99009D64EC /* LaunchScreen.storyboard */; };
 		871984AC1F3BDA99009D64EC /* TabberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871984AB1F3BDA99009D64EC /* TabberTests.swift */; };
 		871984B71F3BDA99009D64EC /* TabberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 871984B61F3BDA99009D64EC /* TabberUITests.swift */; };
-		87FF578C1F40E028005481EC /* Notes.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 87FF578B1F40E028005481EC /* Notes.rtf */; };
 		87FF578E1F40E8A1005481EC /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FF578D1F40E8A1005481EC /* SettingsVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,7 +35,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8712D73E1F42869400A8030A /* HelveticaNeue.dfont */ = {isa = PBXFileReference; lastKnownFileType = file; path = HelveticaNeue.dfont; sourceTree = "<group>"; };
 		871984931F3BDA99009D64EC /* Tabber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tabber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		871984961F3BDA99009D64EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		871984981F3BDA99009D64EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +48,7 @@
 		871984B21F3BDA99009D64EC /* TabberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabberUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		871984B61F3BDA99009D64EC /* TabberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabberUITests.swift; sourceTree = "<group>"; };
 		871984B81F3BDA99009D64EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87FF578B1F40E028005481EC /* Notes.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Notes.rtf; sourceTree = "<group>"; };
+		87E189FC1F44C1FC0002D39A /* TabberNotes.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = TabberNotes.rtf; path = ../TabberNotes.rtf; sourceTree = "<group>"; };
 		87FF578D1F40E8A1005481EC /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,8 +80,7 @@
 		8719848A1F3BDA99009D64EC = {
 			isa = PBXGroup;
 			children = (
-				87FF578B1F40E028005481EC /* Notes.rtf */,
-				8712D73E1F42869400A8030A /* HelveticaNeue.dfont */,
+				87E189FC1F44C1FC0002D39A /* TabberNotes.rtf */,
 				871984951F3BDA99009D64EC /* Tabber */,
 				871984AA1F3BDA99009D64EC /* TabberTests */,
 				871984B51F3BDA99009D64EC /* TabberUITests */,
@@ -242,8 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8712D73F1F42869400A8030A /* HelveticaNeue.dfont in Resources */,
-				87FF578C1F40E028005481EC /* Notes.rtf in Resources */,
 				871984A11F3BDA99009D64EC /* LaunchScreen.storyboard in Resources */,
 				8719849E1F3BDA99009D64EC /* Assets.xcassets in Resources */,
 				8719849C1F3BDA99009D64EC /* Main.storyboard in Resources */,
