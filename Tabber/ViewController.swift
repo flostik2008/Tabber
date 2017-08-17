@@ -40,6 +40,7 @@ class ViewController: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(closeApp), name: NSNotification.Name.UIApplicationDidEnterBackground, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(openApp), name: NSNotification.Name.UIApplicationWillEnterForeground, object: nil)
+                
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -74,7 +75,6 @@ class ViewController: UIViewController {
         let tipArray = [0.18, 0.20, 0.25]
         
         let bill = Double(billField.text!) ?? 0
-        
         if (tipPercent != 0.0) {
             tipValue = bill * tipPercent
         }
@@ -82,11 +82,20 @@ class ViewController: UIViewController {
         tipValue = bill * tipArray[tipControl.selectedSegmentIndex]
         
         let total = bill + tipValue
+        
+        /*
         justTipLbl.text = String(format: "$%.2f", tipValue)
         totalLbl.text = String(format: "$%.2f", total)
         for2PeopleLbl.text = String(format: "$%.2f", total/2)
         for3PeopleLbl.text = String(format: "$%.2f", total/3)
         for4PeopleLbl.text = String(format: "$%.2f", total/4)
+        */
+        
+        justTipLbl.text = tipValue.locCurrency()
+        totalLbl.text = total.locCurrency()
+        for2PeopleLbl.text = (total/2).locCurrency()
+        for3PeopleLbl.text = (total/3).locCurrency()
+        for4PeopleLbl.text = (total/4).locCurrency()
     }
     
     func updateValues() {
@@ -134,4 +143,24 @@ class ViewController: UIViewController {
         billField.text = ""
     }
 }
+
+/*
+ 
+ NumberFormatter.localizedString(from: NSNumber(value: whatever), number: NumberFormatter.Style.decimal)
+
+*/
+
+extension Double {
+    func locCurrency() -> String {
+        return NumberFormatter.localizedString(from: NSNumber(value:self), number: NumberFormatter.Style.currency)
+    }
+}
+
+
+
+
+
+
+
+
 
